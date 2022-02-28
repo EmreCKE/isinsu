@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://kit.fontawesome.com/7ee9c42a82.js" crossorigin="anonymous"></script>
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <nav>
+    <div id="navbar-container" class="container">
+      <a href="/projects.html">Projects</a>
+      <a href="/index.html"><span class="txt-type" data-wait="2500"
+          data-words='["Isinsu","Ilayda","Avanoglu"]'></span></a>
+      <a href="#">cv</a>
+    </div>
+  </nav>
+  <header id="project-item-header">
+    <div class="container">
+      <h1 id="project-name">wheel-of-future</h1>
+      <div class="project-container">
+        <img src="/img/sculptures-img/wheel-of-future/wheel-of-future1.png" id="project-image" />
+        <div id="myModal" class="modal">
+          <span class="close">X</span>
+          <img class="modal-content" id="img01">
+        </div>
+        <div id="project-details">
+          <br><br>
+          <h3 style="text-align: center;">Process</h3>
+          <div class="process">
+            <div class="container">
+              
+              <div class="process-image">
+                <img src="/img/sculptures-img/wheel-of-future/wheel-of-future-process2.png" alt="">
+                <div class="process-overlay">
+                  <p>
+                  <h3>6V Gearbox Motor</h3>
+                  </p>
+                </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="whats-next">
+    <div class="container">
+      <p>What's next</p>
+      <br>
+      <br>
+    
+    <a href="/watermarks/conversion-in-time.html"><img class="whats-next-item"
+        src="/img/watercolour-img/conversion-in-time-diffraction.jpeg" alt=""></a>
+    <a href="/watermarks/grandfather-paradox.html"><img class="whats-next-item"
+        src="/img/watercolour-img/grandfather-paradox.png" alt=""></a>
+    <a href="/watermarks/chaos-and-system.html"><img class="whats-next-item"
+        src="/img/watercolour-img/chaos-and-system.png" alt=""></a>
+  
+    </div>
+  </div>
+
+  <footer id="main-footer">
+    <div class="footer-content container">
+      <div class="social">
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>isinsuilaydaavanoglu@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/typewriter.js"></script>
+  <script src="/js/zoom.js"></script>
+  <script>
+
+    const modalImg1 = document.getElementById("img01");
+    let index = 2;
+    modalImg1.onclick = function () {
+      modalImg1.src = `/img/sculptures-img/wheel-of-future/wheel-of-future${index}.png`;
+      index += 1;
+      if (index > 3) {
+        index = 1;
+      }
+  
+    }
+
+  </script>
+</body>
+
+</html>

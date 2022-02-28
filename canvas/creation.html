@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://kit.fontawesome.com/7ee9c42a82.js" crossorigin="anonymous"></script>
+  <title>Portfolio 〆 Creation</title>
+</head>
+<style>
+ 
+</style>
+<body>
+  <nav>
+    <div id="navbar-container" class="container">
+      <a href="/projects.html">Projects</a>
+      <a href="/index.html"><span class="txt-type" data-wait="2500"
+          data-words='["Isinsu","Ilayda","Avanoglu"]'></span></a>
+      <a href="#">cv</a>
+    </div>
+  </nav>
+
+  <header id="project-item-header">
+    <div class="container">
+      <h1 id="project-name">Creation</h1>
+      <div class="project-container">
+        <img src="/img/canvas/creation/creation1.png" id="project-image" />
+        <div id="myModal" class="modal">
+          <span class="close">X</span>
+          <img class="modal-content" id="img02">
+        </div>
+        <div id="project-details">
+          <p>
+            <br><br>
+            While the hour and minute hands always follow the same trajectory, can the forward and backward of time meet
+            the same direction concept for everyone?
+            It would be a narrow point of view to think that we all perceive the colors in the same way as we choose and
+            shape our small space.
+            If we manage to get out of the space where we are, then we can make the leap and diffract our obstacles.
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <br>
+
+ 
+  <footer id="main-footer">
+    <div class="footer-content container">
+      <div class="social">
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>isinsuilaydaavanoglu@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/typewriter.js"></script>
+  <script src="/js/zoom.js"></script>
+  <script>
+    const modalImg2 = document.getElementById("img02");
+    let index = 2;
+    modalImg2.onclick = function () {
+      modalImg2.src = `/img/canvas/creation/creation${index}.png`;
+      index += 1;
+      if (index > 4) {
+        index = 1;
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>

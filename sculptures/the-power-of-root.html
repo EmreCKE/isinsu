@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://kit.fontawesome.com/7ee9c42a82.js" crossorigin="anonymous"></script>
+  <title>Portfolio 〆 Nature’s Body 
+  </title>
+</head>
+<style>
+ 
+</style>
+<body>
+  <nav>
+    <div id="navbar-container" class="container">
+      <a href="/projects.html">Projects</a>
+      <a href="/index.html"><span class="txt-type" data-wait="2500"
+          data-words='["Isinsu","Ilayda","Avanoglu"]'></span></a>
+      <a href="#">cv</a>
+    </div>
+  </nav>
+
+  <header id="project-item-header">
+    <div class="container">
+      <h1 id="project-name">Nature’s Body 
+      </h1>
+      <div class="project-container">
+        <img src="/img/sculptures-img/the-power-of-root/the-power-of-root1.png" id="project-image" />
+        <div id="myModal" class="modal">
+          <span class="close">X</span>
+          <img class="modal-content" id="img02">
+        </div>
+        <div id="project-details">
+          <p>
+            <br><br>
+            Nature is always dynamic. It has given life to different forms and created its own 
+balance.The energy and diversity it has within itself, which provides this cycle, grows from 
+the soil to the earth.While we are a tiny part of this nature, contrary to what we think, our 
+body is not our only strength.The balance within ourselves comes out of our body and 
+integrates with the nature we live in.
+It is our spine that keeps us upright; The fact that it is very strong but also spinnable 
+symbolizes that we have a symbiotic relationship with nature and that we can evolve.The 
+membrane in the continuation of the brain, to which the spinal cord is surrounded, tells 
+about our development from the roots in nature and our close bond with nature.Each 
+vertebra represents the power of nature.Solar energy, living things, vegetation, harmony, 
+borders, parts, control mechanism, recycling…
+When we come together with all these occurrences and do not try to dominate as an 
+outside influence, but establish a real connection and integrate, we become a useful and 
+real living thing that can stand upright.To not be stuck inside our body, but to overflow, to 
+understand where we came from, is to finally find ourselves and exist.
+            <br>
+          </p>
+          <br>
+          <h5>Used Materials</h5>
+          <br>
+          <ul class="used-materials-list">
+            <li>Leaves and small pieces of vertebrae</li>
+            <li>Kalekim</li>
+            <li>Quartz</li>
+            <li>Glue </li>
+            <li>Starch etc. Dough making</li>
+            <li>Spine</li>
+            <li>3D Print</li>
+         
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h3 style="text-align: center;">Process</h3>
+    <br>
+  <div class="process">
+      <div class="process-image">
+        <img src="/img/sculptures-img/the-power-of-root/the-power-of-root-process1.png" alt="">
+        <div class="process-overlay">
+          <p>Spine 3D Model</p>
+        </div>
+      </div>
+      <div class="process-image">
+        <img src="/img/sculptures-img/the-power-of-root/the-power-of-root-process2.png" alt="">
+        <div class="process-overlay">
+          <p>Spinde 3D Modeling in Fusion360</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div id="whats-next">
+    <div class="container">
+
+      <p>What's next</p>
+      <br>
+      <div class="whats-next-container">
+
+        <a href="the-pulse-of-nature.html"><img class="whats-next-item"
+            src="/img/sculptures-img/the-pulse-of-nature/the-pulse-of-nature1.jpeg" alt=""></a>
+        <a href="wheel-of-future.html"><img class="whats-next-item"
+            src="/img/sculptures-img/wheel-of-future/wheel-of-future1.png" alt=""></a>
+        <a href="/watermarks/conversion-in-time.html"><img class="whats-next-item"
+            src="/img/watercolour-img/conversion-in-time-diffraction.jpeg" alt=""></a>
+
+      </div>
+    </div>
+  </div>
+
+  <footer id="main-footer">
+    <div class="footer-content container">
+      <div class="social">
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>isinsuilaydaavanoglu@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/typewriter.js"></script>
+  <script src="/js/zoom.js"></script>
+  <script>
+    const modalImg2 = document.getElementById("img02");
+    let index = 2;
+    modalImg2.onclick = function () {
+      modalImg2.src = `/img/sculptures-img/the-power-of-root/the-power-of-root${index}.png`;
+      index += 1;
+      if (index > 2) {
+        index = 1;
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>

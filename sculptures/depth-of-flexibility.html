@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://kit.fontawesome.com/7ee9c42a82.js" crossorigin="anonymous"></script>
+  <title>Portfolio 〆 A Wave in the Mind 
+  </title>
+</head>
+
+<body>
+  <nav>
+    <div id="navbar-container" class="container">
+      <a href="/projects.html">Projects</a>
+      <a href="/index.html"><span class="txt-type" data-wait="2500"
+          data-words='["Isinsu","Ilayda","Avanoglu"]'></span></a>
+      <a href="#">cv</a>
+    </div>
+  </nav>
+  <header id="project-item-header">
+    <div class="container">
+      <h1 id="project-name">A Wave in the Mind 
+      </h1>
+      <div class="project-container">
+        <img src="/img/sculptures-img/depth-of-flexibility/depth-of-flexibility1.jpeg" id="project-image" />
+        <div id="myModal" class="modal">
+          <span class="close">X</span>
+          <img class="modal-content" id="img01">
+        </div>
+        <div id="project-details">
+          <br><br>
+          <p>We have the concentration of multitasking.While our body represents this, we are as 
+            endless as the ocean and full of unknowns.Experiences, memories experienced turn into 
+            external manifestations.None of the learned teachings should be interpreted as they are. 
+            A straight journey and line of concepts is unthinkable.
+            The uniqueness and intelligence of the octopus reminds us of this.Tasting with his skin, 
+            having his mouth under his armpits, and incredibly flexible structure remind us that 
+            different things can be done at the same time, and lead us to think in a different 
+            dimension.It emphasizes the eternity and power of the stream of consciousness as other 
+            life forms make you feel the tides in the mind.</p>
+            
+            <br>
+            <h5>Used Materials</h5>
+            <br>
+            <ul class="used-materials-list">
+              <li>Kalekim</li>
+              <li>Quartz</li>
+              <li>Glue</li>
+              <li>Starch etc. Dough Making</li>
+              <li>Air Conditioner Pipe</li>
+              <li>Washing Straws</li>
+              <li>Cotter</li>
+              <li>Clock pin, wheel etc. waste materials</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="whats-next">
+    <div class="container">
+      <p>What's next</p>
+      <br>
+      <br>
+      <div class="whats-next-container">
+       
+        <a href="the-power-of-root.html"><img class="whats-next-item"
+            src="/img/sculptures-img/the-power-of-root/the-power-of-root1.png" alt=""></a>
+      
+        <a href="the-pulse-of-nature.html"><img class="whats-next-item"
+            src="/img/sculptures-img/the-pulse-of-nature/the-pulse-of-nature1.jpeg" alt=""></a>
+      
+        <a href="wheel-of-future.html"><img class="whats-next-item"
+            src="/img/sculptures-img/wheel-of-future/wheel-of-future1.png" alt=""></a>
+      
+      </div>
+    </div>
+  </div>
+
+  <footer id="main-footer">
+    <div class="footer-content container">
+      <div class="social">
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>isinsuilaydaavanoglu@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/typewriter.js"></script>
+  <script src="/js/zoom.js"></script>
+  <script>
+
+    const modalImg1 = document.getElementById("img01");
+
+
+    let index = 2;
+    modalImg1.onclick = function () {
+      modalImg1.src = `/img/sculptures-img/depth-of-flexibility/depth-of-flexibility${index}.jpeg`;
+      index += 1;
+      if (index === 4) {
+        index = 1;
+      }
+    }
+      ;
+  </script>
+</body>
+
+</html>
